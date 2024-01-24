@@ -24,8 +24,6 @@ const data = [
 ];
 
 const Login = () => {
-  const [value, setValue] = useState(null);
-  const [isFocus, setIsFocus] = useState(false);
   const colorScheme = useColorScheme();
   const isDarkMode = colorScheme === 'dark';
 
@@ -106,12 +104,6 @@ const Login = () => {
           </View>
         </View>
       </View>
-
-      <StatusBar
-        animated={true}
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={isDarkMode ? '#1F2937' : '#f5f5f5'}
-      />
     </View>
   );
 };

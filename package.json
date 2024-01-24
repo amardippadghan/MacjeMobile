@@ -14,7 +14,12 @@
     "@react-navigation/native": "^6.1.9",
     "react": "18.2.0",
     "react-native": "0.73.2",
+    "react-native-date-picker": "^4.3.5",
+    "react-native-datepicker": "^1.7.2",
     "react-native-element-dropdown": "^2.10.1",
+    "react-native-paper": "^5.12.2",
+    "react-native-signature-canvas": "^4.7.1",
+    "react-native-signature-capture": "^0.4.12",
     "react-native-vector-icons": "^10.0.3",
     "twrnc": "^3.6.8"
   },
