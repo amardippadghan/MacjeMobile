@@ -7,6 +7,7 @@ import {
   StatusBar,
   StyleSheet,
   useColorScheme,
+  ScrollView,
 } from 'react-native';
 import SubLoginPage from './SmallComponents/SubLoginPage';
 import tw from 'twrnc';
@@ -28,7 +29,7 @@ const Login = () => {
   const isDarkMode = colorScheme === 'dark';
 
   return (
-    <View style={tw`flex-1 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
+    <ScrollView style={tw`flex-1 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
       <View style={tw`flex justify-center items-center mt-12 p-4`}>
         <Text style={tw`text-3xl font-bold mb-4`}>Login</Text>
 
@@ -50,7 +51,7 @@ const Login = () => {
         </TouchableOpacity>
       </View>
       <Divider />
-      <View style={tw`bg-white `}>
+      <View style={tw`bg-white my-2`}>
         <Text style={tw`text-black ml-5 font-bold`}>
           Download Template From Cloud
         </Text>
@@ -84,7 +85,7 @@ const Login = () => {
       </View>
       <View>
         <Divider />
-        <Text style={tw`text-gray-900 ml-5 font-bold`}>
+        <Text style={tw`text-gray-900 ml-5 font-bold my-2`}>
           Upload Inspection to Cloud
         </Text>
         <Divider />
@@ -104,7 +105,7 @@ const Login = () => {
           </View>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
